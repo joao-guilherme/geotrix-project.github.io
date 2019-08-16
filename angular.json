@@ -25,6 +25,9 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/googleb75c56f5d15f1232.html",
               "src/assets"
             ],
             "styles": [
