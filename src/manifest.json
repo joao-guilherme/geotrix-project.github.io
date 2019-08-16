@@ -1,0 +1,56 @@
+{
+    "name": "Geotrix",
+    "short_name": "Geotrix",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FFF",
+    "theme_color": "#FFF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/assets/icon/geotrix_32x32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/assets/icon/geotrix_48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/assets/icon/geotrix_72x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "/assets/icon/geotrix_128x128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/assets/icon/geotrix_144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/assets/icon/geotrix_152x152.png",
+            "type": "image/png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "/assets/icon/geotrix_192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/assets/icon/geotrix_384x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/assets/icon/geotrix_512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
