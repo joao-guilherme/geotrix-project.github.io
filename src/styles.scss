@@ -12,6 +12,11 @@ $geotrix-theme: mat-light-theme($geotrix-primary, $geotrix-accent, $geotrix-warn
 
 @include angular-material-theme($geotrix-theme);
 
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
 html, body {
     height: 100%;
 }
