@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1566237834203,
+  "timestamp": 1566238398858,
   "index": "https://geotrix-project.github.io/index.html",
   "assetGroups": [
     {
@@ -91,7 +91,7 @@
     "https://geotrix-project.github.io/assets/logo/geotrix_200x200.png": "7bad3fdb0811e5df8da807932b1316db1b87e83a",
     "https://geotrix-project.github.io/assets/logo/ra-logo-white.png": "d4ca772d62e02f67e0dcc994f0306fd10ac25aab",
     "https://geotrix-project.github.io/favicon.ico": "643e6e1d291f53481404a0283fc66892ea571253",
-    "https://geotrix-project.github.io/index.html": "da4ca1c1812493ceb6f7fd57502864c9cfaf47d5",
+    "https://geotrix-project.github.io/index.html": "347b4deb979621b538a9a5178cebc50a4e12ec49",
     "https://geotrix-project.github.io/main-es2015.de5f2f4ade6f726e275a.js": "b277960503f4ae1734e8e6fcb2da96099f1d3e1e",
     "https://geotrix-project.github.io/main-es5.9fd687af55952ae56e70.js": "432456bb2dd8957078f819a130733bd6cfde8152",
     "https://geotrix-project.github.io/polyfills-es2015.d77e0b49b00575a23eb0.js": "058203dab4ba87056d6976029ba60fa42e6f75b9",
