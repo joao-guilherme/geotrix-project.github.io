@@ -1,0 +1,1 @@
+let deferredPrompt;window.addEventListener("beforeinstallprompt",e=>{e.preventDefault(),deferredPrompt=e,console.log("Evento beforeinstallprompt emitido.")}),window.addEventListener("appinstalled",e=>{console.log("Instala\xe7\xe3o realizada com sucesso.")});

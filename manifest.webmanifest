@@ -2,7 +2,7 @@
   "name": "Geotrix",
   "short_name": "Geotrix",
   "theme_color": "#21a8a8",
-  "background_color": "#fafafa",
+  "background_color": "#21a8a8",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
