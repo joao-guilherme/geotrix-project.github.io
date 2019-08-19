@@ -25,9 +25,10 @@
             "aot": true,
             "assets": [
               "src/assets",
-              "src/favicon.ico",
               "src/robots.txt",
               "src/sitemap.xml",
+              "src/favicon.ico",
+              "src/browserconfig.xml",
               "src/manifest.webmanifest",
               "src/googleb75c56f5d15f1232.html"
             ],
