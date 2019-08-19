@@ -1,11 +1,12 @@
 #main-header {
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 10;
     height: 50px;
     position: fixed;
     padding: 0 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
     background-color: rgba(33, 168, 168);
 }
 
