@@ -39,8 +39,10 @@
 
 .banner-install {
   color: #1bcacd;
-  margin-left: 4rem;
+  margin-left: 3rem;
   font-size: 1.55rem;
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
 }
 
 .banner-decoration {
@@ -79,7 +81,7 @@
   }
 
   .banner-install {
-    margin-left: 6rem;
+    margin-left: 4rem;
     font-size: 1.8rem;
   }
 
@@ -95,7 +97,7 @@
   }
 
   .banner-heading {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .banner-subheading {
@@ -107,7 +109,6 @@
     font-size: 2rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    transition: background-color 0.2s;
   }
 
   .banner-install {
