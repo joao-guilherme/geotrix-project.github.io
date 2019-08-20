@@ -32,7 +32,8 @@ body {
 }
 
 a {
-  cursor: pointer;
   color: inherit;
+  cursor: pointer;
+  user-select: none;
   text-decoration: none;
 }
