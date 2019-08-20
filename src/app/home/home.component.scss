@@ -2,8 +2,8 @@
   width: 100%;
   display: flex;
   color: #fff;
-  height: 32rem;
-  padding-top: 8rem;
+  height: 28rem;
+  padding-top: 6rem;
   position: relative;
   justify-content: center;
 }
@@ -37,6 +37,12 @@
   background-color: #1bcacd;
 }
 
+.banner-install {
+  color: #1bcacd;
+  margin-left: 4rem;
+  font-size: 1.55rem;
+}
+
 .banner-decoration {
   top: 0;
   width: 100%;
@@ -54,8 +60,8 @@
 
 @media (min-width: 768px) {
   .banner {
-    height: 46rem;
-    padding-top: 10rem;
+    height: 40rem;
+    padding-top: 7rem;
   }
 
   .banner-heading {
@@ -68,9 +74,13 @@
   }
 
   .banner-button {
-    font-size: 1.8rem;
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
+  }
+
+  .banner-install {
+    margin-left: 6rem;
+    font-size: 1.8rem;
   }
 
   .banner-decoration {
@@ -80,9 +90,10 @@
 
 @media (min-width: 1200px) {
   .banner {
-    height: 55rem;
-    padding-top: 12rem;
+    height: 48rem;
+    padding-top: 8rem;
   }
+
   .banner-heading {
     font-size: 6rem;
   }
@@ -97,6 +108,11 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: background-color 0.2s;
+  }
+
+  .banner-install {
+    font-size: 2rem;
+    margin-left: 8rem;
   }
 }
 

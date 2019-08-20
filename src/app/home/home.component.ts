@@ -1,4 +1,6 @@
-import { Component, OnInit, HostListener, ViewChildren } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, OnInit, HostListener } from '@angular/core';
+
 import EmblaCarousel from 'embla-carousel';
 
 @Component({
@@ -8,11 +10,27 @@ import EmblaCarousel from 'embla-carousel';
 })
 export class HomeComponent implements OnInit {
 
-  deferredPrompt;
+  private deferredPrompt: any;
+  public showButton = false;
 
-  constructor() { }
+  @HostListener('window:beforeinstallprompt', ['$event'])
+  onbeforeinstallprompt(evt: any) {
+    console.log(evt);
+    evt.preventDefault();
+
+    this.showButton = true;
+    this.deferredPrompt = evt;
+  }
+
+  // window.addEventListener('appinstalled', (evt) => {
+  //   console.log('Instalação realizada com sucesso.');
+  // });
+
+  constructor(public router: Router) { }
 
   ngOnInit() {
+    // *ngIf="!router.url.includes('home')"
+
     // const carousel: Element = document.querySelector('.embla');
 
     // const nextBtn: Element = carousel.querySelector('.embla__button--next');
@@ -31,10 +49,13 @@ export class HomeComponent implements OnInit {
     // previousBtn.addEventListener('click', embla.scrollPrev, false);
   }
 
-  onInstallClick() {
+  addToHomeScreen() {
     this.deferredPrompt.prompt();
-    this.deferredPrompt.userChoice.then((choiceResult) => {
+
+    this.deferredPrompt.userChoice.then((choiceResult: any) => {
       if (choiceResult.outcome === 'accepted') {
+        this.showButton = false;
+        this.deferredPrompt = null;
         console.log('User accepted the A2HS prompt');
       } else {
         console.log('User dismissed the A2HS prompt');

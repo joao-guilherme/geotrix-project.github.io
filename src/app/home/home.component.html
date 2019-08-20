@@ -2,7 +2,8 @@
   <div class="banner-content">
     <h1 class="banner-heading">Geotrix</h1>
     <h2 class="banner-subheading">A simplified approach to Analytical Geometry with Step-by-Step solution</h2>
-    <a id="exampleBtn" (click)="onInstallClick()" class="banner-button">Examples</a>
+    <a class="banner-button">Examples</a>
+    <a *ngIf="showButton" class="banner-install" (click)="addToHomeScreen()">Install our App</a>
   </div>
 
   <div class="banner-decoration"></div>

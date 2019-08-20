@@ -35,9 +35,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-              "src/manifest.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
