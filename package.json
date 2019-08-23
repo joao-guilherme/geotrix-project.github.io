@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "online": "ng serve --port 8080 --host 192.168.0.15 --disableHostCheck true",
+    "online": "ng serve --port 8080 --host 192.168.0.15",
     "prod": "ng b --prod --base-href https://geotrix-project.github.io/",
     "deploy": "ng b --prod --base-href https://geotrix-project.github.io/ && npx ngh --branch=master --dir=dist/"
   },
