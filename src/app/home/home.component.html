@@ -3,7 +3,7 @@
     <h1>Geotrix</h1>
     <h2>A simplified approach to Analytical Geometry with Step-by-Step solution</h2>
     <a class="banner-example banner-button">Examples</a>
-    <a class="banner-install banner-button" (click)="addToHomeScreen()">Install our App</a>
+    <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()">Install our App</a>
   </div>
 </section>
 
