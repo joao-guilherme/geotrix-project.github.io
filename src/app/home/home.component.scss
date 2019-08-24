@@ -1,178 +1,69 @@
+@import "../../assets/css/variables";
+
+// Start Banner
+
 .banner {
-  width: 100%;
-  display: flex;
-  color: #fff;
-  height: 28rem;
-  padding-top: 6rem;
-  position: relative;
-  justify-content: center;
+  padding: 90px 15px 20px;
+  background-color: $black-color;
+
+  div {
+    margin: auto;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $light-aqua-color;
+  }
+
+  h2 {
+    color: #fff;
+    margin: 25px 0;
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
 }
 
-.banner-content {
-  z-index: 1;
-  margin: 0 auto;
-  padding: 0 30px;
-  max-width: 800px;
-}
-
-.banner-heading {
-  color: #1bcacd;
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.banner-subheading {
+.banner-example {
+  margin: 15px 0;
   font-weight: 400;
-  font-size: 1.6rem;
-  margin-bottom: 3rem;
-}
-
-.banner-button {
-  color: #282c34;
-  font-weight: 400;
-  font-size: 1.8rem;
-  display: inline-block;
-  padding: 0.8rem 2.5rem;
-  background-color: #1bcacd;
+  background-color: $light-aqua-color;
 }
 
 .banner-install {
-  color: #1bcacd;
-  margin-left: 3rem;
-  font-size: 1.55rem;
+  color: $light-aqua-color;
+}
+
+.banner-button {
+  font-size: 1.6rem;
   display: inline-block;
   padding: 0.8rem 2.5rem;
 }
 
-.banner-decoration {
-  top: 0;
-  width: 100%;
-  height: 100%;
+// End Banner
 
-  transform: skewY(-2.5deg);
-  transform-origin: top left;
-  background-color: #282c34;
-}
+// Start Description
 
-.banner-content,
-.banner-decoration {
-  position: absolute;
-}
+.description {
+  margin: auto;
+  max-width: 900px;
+  font-size: 1.6rem;
+  padding: 5rem 2rem;
 
-@media (min-width: 768px) {
-  .banner {
-    height: 40rem;
-    padding-top: 7rem;
-  }
-
-  .banner-heading {
-    font-size: 5rem;
-  }
-
-  .banner-subheading {
-    font-size: 2.5rem;
-    margin-bottom: 4rem;
-  }
-
-  .banner-button {
-    padding-top: 1.2rem;
-    padding-bottom: 1.2rem;
-  }
-
-  .banner-install {
-    margin-left: 4rem;
-    font-size: 1.8rem;
-  }
-
-  .banner-decoration {
-    transform: skewY(-1.5deg);
+  p {
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $gray;
   }
 }
 
-@media (min-width: 1200px) {
-  .banner {
-    height: 48rem;
-    padding-top: 8rem;
-  }
+// End Description
 
-  .banner-heading {
-    font-size: 5rem;
-  }
-
-  .banner-subheading {
-    font-size: 3rem;
-    margin-bottom: 5rem;
-  }
-
-  .banner-button {
-    font-size: 2rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .banner-install {
-    font-size: 2rem;
-    margin-left: 8rem;
-  }
-}
-
-// .page-wrap {
-//   padding-left: 2rem;
-//   padding-right: 2rem;
-//   margin-left: auto;
-//   margin-right: auto;
-//   width: 90%;
-//   height: 100%;
-// }
-
-// .content-wrap {
-//   max-width: 800px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// .banner__content {
-//   position: relative;
-//   z-index: 1;
-//   padding-top: 9rem;
-//   padding-bottom: 10rem;
-// }
-
-// .banner__heading {
-//   color: #1bcacd;
-//   font-size: 5rem;
-//   font-weight: bold;
-//   margin-bottom: 1rem;
-// }
-
-// .banner__subheading {
-//   font-weight: 200;
-//   font-size: 2.5rem;
-//   margin-bottom: 4rem;
-// }
-
-// .banner__button {
-//   background-color: #1bcacd;
-//   color: #282c34;
-//   display: inline-block;
-//   text-decoration: none;
-//   padding: 0.8rem 2.5rem;
-//   font-weight: 400;
-//   font-size: 1.8rem;
-//     padding-top: 1.2rem;
-//     padding-bottom: 1.2rem;
-// }
-
-// .banner_link {
-//   color: #1bcacd;
-//     text-decoration: none;
-//     font-weight: 400;
-//     margin-left: 2.5rem;
-//     font-size: 1.8rem;
-// }
+// Start Theme Sizes
 
 .embla {
+  margin: auto;
+  max-width: 900px;
   position: relative;
 }
 
@@ -181,48 +72,68 @@
   overflow: hidden;
 }
 
-.embla__viewport.is-draggable {
-  cursor: move;
-  cursor: grab;
-}
-
 .embla__viewport.is-dragging {
   cursor: grabbing;
 }
 
 .embla__container {
   display: flex;
-  will-change: transform;
   margin-left: -1rem;
 }
 
 .embla__slide {
+  width: 100%;
   flex: 0 0 auto;
-  width: 60%;
   position: relative;
   padding-left: 1rem;
-  counter-increment: embla;
 }
 
-.embla__slide__inner {
-  background-color: rgb(40, 44, 52);
-  position: relative;
-  border-radius: 0.5rem;
-  min-height: 200px;
-  padding-bottom: 46%;
-  font-size: 5rem;
+// End Theme Sizes
+
+// Start Theme Content
+
+.themes {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.embla__slide__inner:before {
-  color: white;
-  font-weight: 300;
-  line-height: 1;
-  content: counter(embla);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.themes-title {
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
 }
+
+.themes-subtitle {
+  font-size: 1.3rem;
+  font-weight: normal;
+  padding-bottom: 1rem;
+  color: $light-black-color;
+}
+
+.theme-content {
+  padding: 5rem;
+}
+
+.theme-icon {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+
+  img {
+    height: 90px;
+    border-radius: 45px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.theme-description {
+  font-size: 1.6rem;
+  margin: 15px auto 0;
+}
+
+// End Theme Content
+
+// Start Theme Buttons
 
 .embla__button {
   background-color: transparent;
@@ -240,9 +151,9 @@
 }
 
 .embla__button__svg {
-  fill: #1bcacd;
   width: 3.5rem;
   height: 3.5rem;
+  fill: $light-aqua-color;
 }
 
 .embla__button--prev {
@@ -251,4 +162,87 @@
 
 .embla__button--next {
   right: 0.7rem;
+}
+
+// End Theme Buttons
+
+@media screen and (min-width: 768px) {
+  .banner {
+    padding: 130px 15px 40px;
+
+    h1 {
+      font-size: 4rem;
+    }
+
+    h2 {
+      margin: 35px 0;
+      font-size: 2rem;
+    }
+  }
+
+  .banner-install {
+    margin-left: 50px;
+  }
+
+  .banner-button {
+    font-size: 1.8rem;
+    padding: 0.9rem 2.8rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    padding: 5rem 3rem;
+
+    p {
+      padding-bottom: 5rem;
+    }
+  }
+
+  .embla__slide {
+    width: 300px;
+    opacity: 0.4;
+    transition: opacity, transform 300ms ease;
+  }
+
+  .is-selected {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .themes-subtitle {
+    padding-bottom: 3rem;
+  }
+
+  .themes {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding: 130px 15px 40px;
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    h2 {
+      margin: 50px 0;
+      font-size: 2.5rem;
+    }
+  }
+
+  .banner-button {
+    font-size: 2rem;
+    padding: 1.5rem 3.2rem;
+  }
+
+  .description {
+    font-size: 2.1rem;
+    padding: 6rem 4rem;
+
+    p {
+      padding-bottom: 6rem;
+    }
+  }
 }

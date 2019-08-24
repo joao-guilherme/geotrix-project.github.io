@@ -1,44 +1,77 @@
 <section class="banner">
   <div class="banner-content">
-    <h1 class="banner-heading">Geotrix</h1>
-    <h2 class="banner-subheading">A simplified approach to Analytical Geometry with Step-by-Step solution</h2>
-    <a class="banner-button">Examples</a>
-    <a *ngIf="showButton" class="banner-install" (click)="addToHomeScreen()">Install our App</a>
+    <h1>Geotrix</h1>
+    <h2>A simplified approach to Analytical Geometry with Step-by-Step solution</h2>
+    <a class="banner-example banner-button">Examples</a>
+    <a class="banner-install banner-button" (click)="addToHomeScreen()">Install our App</a>
   </div>
-
-  <div class="banner-decoration"></div>
 </section>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<section class="description">
+  <p>
+    Embla's purpose is to provide a low level carousel and allow developers to extend it by using its available
+    methods. Extend it with some very basic JavaScript and build awesome physics simulated carousels. It's dependency
+    free and 100% open source.
+  </p>
+</section>
 
-<!-- Embla
+<section class="themes">
+  <h3 class="themes-title">Temas já disponíveis!</h3>
+  <h5 class="themes-subtitle">Escolha e clique</h5>
   <div class="embla">
     <div class="embla__viewport">
       <div class="embla__container">
-        <div class="embla__slide">
-          <div class="embla__slide__inner"></div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner"></div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner"></div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner"></div>
-        </div>
-        <div class="embla__slide">
-          <div class="embla__slide__inner"></div>
-        </div>
-      </div>
-    </div> -->
 
-<!-- Buttons
+        <div class="embla__slide">
+          <div class="theme-content">
+            <div class="theme-icon">
+              <img src="../../assets/icons/themes/infinity.png" alt="" srcset="">
+            </div>
+            <div class="theme-description">Determinante</div>
+          </div>
+        </div>
+
+        <div class="embla__slide">
+          <div class="theme-content">
+            <div class="theme-icon">
+              <img src="../../assets/icons/themes/percentage.png" alt="" srcset="">
+            </div>
+            <div class="theme-description">Inversa</div>
+          </div>
+        </div>
+
+        <div class="embla__slide">
+          <div class="theme-content">
+            <a href="/vectorial_product">
+              <div class="theme-icon">
+                <img src="../../assets/icons/themes/square-root.png" alt="" srcset="">
+              </div>
+              <div class="theme-description">Produto Vetorial</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="embla__slide">
+          <div class="theme-content">
+            <div class="theme-icon">
+              <img src="../../assets/icons/themes/pi.png" alt="" srcset="">
+            </div>
+            <div class="theme-description">Vetores</div>
+          </div>
+        </div>
+
+        <div class="embla__slide">
+          <div class="theme-content">
+            <div class="theme-icon">
+              <img src="../../assets/icons/themes/the-sum-of.png" alt="" srcset="">
+            </div>
+            <div class="theme-description">Cônicas e Quádricas</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <button class="embla__button embla__button--prev" type="button">
       <svg class="embla__button__svg" viewBox="137.718 -1.001 366.563 643.999">
         <path
@@ -46,6 +79,7 @@
         </path>
       </svg>
     </button>
+
     <button class="embla__button embla__button--next" type="button">
       <svg class="embla__button__svg" viewBox="0 0 238.003 238.003">
         <path
@@ -53,4 +87,6 @@
         </path>
       </svg>
     </button>
-  </div> -->
+
+  </div>
+</section>

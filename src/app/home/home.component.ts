@@ -31,22 +31,22 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // *ngIf="!router.url.includes('home')"
 
-    // const carousel: Element = document.querySelector('.embla');
+    const carousel: Element = document.querySelector('.embla');
 
-    // const nextBtn: Element = carousel.querySelector('.embla__button--next');
-    // const previousBtn: Element = carousel.querySelector('.embla__button--prev');
+    const nextBtn: Element = carousel.querySelector('.embla__button--next');
+    const previousBtn: Element = carousel.querySelector('.embla__button--prev');
 
-    // const embla = EmblaCarousel(carousel.querySelector('.embla__viewport'), {
-    //   loop: true,
-    //   startIndex: 1,
-    //   align: 'center',
-    //   draggable: true,
-    //   dragFree: false,
-    //   slidesToScroll: 1
-    // });
+    const embla = EmblaCarousel(carousel.querySelector('.embla__viewport'), {
+      loop: true,
+      startIndex: 1,
+      align: 'center',
+      draggable: true,
+      dragFree: false,
+      slidesToScroll: 1
+    });
 
-    // nextBtn.addEventListener('click', embla.scrollNext, false);
-    // previousBtn.addEventListener('click', embla.scrollPrev, false);
+    nextBtn.addEventListener('click', embla.scrollNext, false);
+    previousBtn.addEventListener('click', embla.scrollPrev, false);
   }
 
   addToHomeScreen() {
