@@ -1,19 +1,9 @@
-@import "~@angular/material/theming";
-// Plus imports for other components in your app.
-
-@include mat-core();
-
-$geotrix-primary: mat-palette($mat-indigo);
-$geotrix-accent: mat-palette($mat-pink, A200, A100, A400);
-$geotrix-warn: mat-palette($mat-red);
-
-$geotrix-theme: mat-light-theme($geotrix-primary, $geotrix-accent, $geotrix-warn);
-
-@include angular-material-theme($geotrix-theme);
-
 * {
-  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
   outline: none;
+  box-sizing: border-box;
 }
 
 html {
@@ -21,7 +11,8 @@ html {
 }
 
 body {
-  margin: 0;
+  color: #282c34;
+  line-height: 2.5rem;
   -webkit-tap-highlight-color: transparent;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
@@ -33,7 +24,6 @@ body {
 
 a {
   color: inherit;
-  cursor: pointer;
   user-select: none;
   text-decoration: none;
 }
