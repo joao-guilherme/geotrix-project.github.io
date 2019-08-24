@@ -1,0 +1,27 @@
+@import "../../assets/css/variables";
+
+footer {
+  margin: auto;
+  max-width: 900px;
+}
+
+#divider {
+  height: 5px;
+  padding: 0 2rem;
+
+  div {
+    height: inherit;
+    border-top: 1px solid $gray;
+  }
+}
+
+#content {
+  display: flex;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+  justify-content: space-around;
+
+  a {
+    padding: 1rem;
+  }
+}
