@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1566332078430,
+  "timestamp": 1566678496027,
   "index": "https://geotrix-project.github.io/index.html",
   "assetGroups": [
     {
@@ -10,13 +10,13 @@
       "urls": [
         "https://geotrix-project.github.io/favicon.ico",
         "https://geotrix-project.github.io/index.html",
-        "https://geotrix-project.github.io/main-es2015.e89b1b3f71dcd6ad4970.js",
-        "https://geotrix-project.github.io/main-es5.7145851a856f8c08b12d.js",
+        "https://geotrix-project.github.io/main-es2015.e553a5d5bad2decab1fd.js",
+        "https://geotrix-project.github.io/main-es5.089c4a8f28406ed36623.js",
         "https://geotrix-project.github.io/polyfills-es2015.d77e0b49b00575a23eb0.js",
         "https://geotrix-project.github.io/polyfills-es5.38c6da221291b284e1c4.js",
         "https://geotrix-project.github.io/runtime-es2015.5bc68c0dd8cf137fbe82.js",
         "https://geotrix-project.github.io/runtime-es5.ee0aae13fb762b150814.js",
-        "https://geotrix-project.github.io/styles.c8ed96375793598da0a0.css"
+        "https://geotrix-project.github.io/styles.c23b2b9b2896b11613c7.css"
       ],
       "patterns": []
     },
@@ -25,6 +25,7 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "https://geotrix-project.github.io/assets/css/_variables.scss",
         "https://geotrix-project.github.io/assets/icons/apple/apple-touch-icon-114x114.png",
         "https://geotrix-project.github.io/assets/icons/apple/apple-touch-icon-120x120.png",
         "https://geotrix-project.github.io/assets/icons/apple/apple-touch-icon-144x144.png",
@@ -51,6 +52,11 @@
         "https://geotrix-project.github.io/assets/icons/ms/mstile-310x150.png",
         "https://geotrix-project.github.io/assets/icons/ms/mstile-310x310.png",
         "https://geotrix-project.github.io/assets/icons/ms/mstile-70x70.png",
+        "https://geotrix-project.github.io/assets/icons/themes/infinity.png",
+        "https://geotrix-project.github.io/assets/icons/themes/percentage.png",
+        "https://geotrix-project.github.io/assets/icons/themes/pi.png",
+        "https://geotrix-project.github.io/assets/icons/themes/square-root.png",
+        "https://geotrix-project.github.io/assets/icons/themes/the-sum-of.png",
         "https://geotrix-project.github.io/assets/logo/geotrix_200x100.png",
         "https://geotrix-project.github.io/assets/logo/geotrix_200x200.png",
         "https://geotrix-project.github.io/assets/logo/ra-logo-white.png"
@@ -60,6 +66,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "https://geotrix-project.github.io/assets/css/_variables.scss": "678150ec41c220e58fb35df043132f083fd21451",
     "https://geotrix-project.github.io/assets/icons/apple/apple-touch-icon-114x114.png": "7969d7e07b60a674bc9aa31150dc8ed22b7dfa7c",
     "https://geotrix-project.github.io/assets/icons/apple/apple-touch-icon-120x120.png": "b5a3daa50f632e34cc357db106a6fbf69af1ffa3",
     "https://geotrix-project.github.io/assets/icons/apple/apple-touch-icon-144x144.png": "7ee93c924bc518ddb9f75cf355a5a253311f9191",
@@ -86,18 +93,23 @@
     "https://geotrix-project.github.io/assets/icons/ms/mstile-310x150.png": "fcd079c76100774d5b6ff79e823bb5bc2b531efd",
     "https://geotrix-project.github.io/assets/icons/ms/mstile-310x310.png": "4c281b73755e6412e0f735a15564999dbf91e559",
     "https://geotrix-project.github.io/assets/icons/ms/mstile-70x70.png": "e0fb3feaf6bd1ff67472e4ae4c1995cb7f07717d",
+    "https://geotrix-project.github.io/assets/icons/themes/infinity.png": "8163fc3865e30e980fd30ccd7362b89b453dae30",
+    "https://geotrix-project.github.io/assets/icons/themes/percentage.png": "f4c33f470c2bdda1fc572b764d838c5cddb9c0e4",
+    "https://geotrix-project.github.io/assets/icons/themes/pi.png": "0ba67e78802c3a18df256e6f9b70aed2e862eebf",
+    "https://geotrix-project.github.io/assets/icons/themes/square-root.png": "26aebc81905212646b346c3a07b59ef907e62735",
+    "https://geotrix-project.github.io/assets/icons/themes/the-sum-of.png": "cc866d56eb4d9994b78fb5526329668d2ae5eef5",
     "https://geotrix-project.github.io/assets/logo/geotrix_200x100.png": "fe4db08f035d16481cfb5f2565be0a4e1d0680a5",
     "https://geotrix-project.github.io/assets/logo/geotrix_200x200.png": "7bad3fdb0811e5df8da807932b1316db1b87e83a",
     "https://geotrix-project.github.io/assets/logo/ra-logo-white.png": "d4ca772d62e02f67e0dcc994f0306fd10ac25aab",
     "https://geotrix-project.github.io/favicon.ico": "643e6e1d291f53481404a0283fc66892ea571253",
-    "https://geotrix-project.github.io/index.html": "ac1bb333407196f362606d6e268f3d685597045a",
-    "https://geotrix-project.github.io/main-es2015.e89b1b3f71dcd6ad4970.js": "321328b4b733e6f6748527fe114f37be36d96fe8",
-    "https://geotrix-project.github.io/main-es5.7145851a856f8c08b12d.js": "63c11fc74320a9475ffa28e1d1110fc3fabfc092",
+    "https://geotrix-project.github.io/index.html": "e747db122b373f9125eb91bbd603dd0240f8d3ed",
+    "https://geotrix-project.github.io/main-es2015.e553a5d5bad2decab1fd.js": "77e6f79bc2a4ad6f5239e9700f769a4f2ee2c37f",
+    "https://geotrix-project.github.io/main-es5.089c4a8f28406ed36623.js": "18b636bac2a8b027a6fae3fd1567c9da6b7182f5",
     "https://geotrix-project.github.io/polyfills-es2015.d77e0b49b00575a23eb0.js": "058203dab4ba87056d6976029ba60fa42e6f75b9",
     "https://geotrix-project.github.io/polyfills-es5.38c6da221291b284e1c4.js": "7e1b38fcb73a9607657630e25f278302170f96dc",
     "https://geotrix-project.github.io/runtime-es2015.5bc68c0dd8cf137fbe82.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "https://geotrix-project.github.io/runtime-es5.ee0aae13fb762b150814.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
-    "https://geotrix-project.github.io/styles.c8ed96375793598da0a0.css": "12d74b6135511bc1f08d4a409e11ad7a4427fb32"
+    "https://geotrix-project.github.io/styles.c23b2b9b2896b11613c7.css": "1be25deca17d82bbcdaa18e759d0e8a4c7af38c0"
   },
   "navigationUrls": [
     {
