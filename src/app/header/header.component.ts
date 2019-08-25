@@ -7,18 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  private win: any = window;
+  public standalone: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    this.standalone = this.win.navigator.standalone ||
+      this.win.matchMedia('(display-mode: standalone)').matches;
   }
 
   onBack() {
-    document.exitFullscreen();
-
-    if (window.history.length === 2) {
-
-    } else {
-      window.history.back();
-    }
+    this.win.history.back();
   }
 }
