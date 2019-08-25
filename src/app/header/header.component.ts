@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   private win: any = window;
+  private doc: any = document;
+
   public standalone: boolean;
 
   constructor() { }
@@ -18,6 +20,13 @@ export class HeaderComponent implements OnInit {
   }
 
   onBack() {
-    this.win.history.back();
+    // this.win.history.back();
+    const method = this.doc.exitFullscreen ||
+      this.doc.mozCancelFullScreen ||
+      this.doc.msExitFullscreen;
+
+    if (method) {
+      method.call(this.doc);
+    }
   }
 }
