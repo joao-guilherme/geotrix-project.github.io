@@ -13,6 +13,22 @@ header {
   justify-content: space-between;
 }
 
+.back-button {
+  display: none;
+}
+
+// .back-button {
+//   width: 5rem;
+//   display: block;
+//   padding: 12.5px 0;
+
+//   svg {
+//     fill: #fff;
+//     width: 25px;
+//     height: 25px;
+//   }
+// }
+
 .geotrix-logo img {
   padding: 5px 20px;
 }
@@ -44,8 +60,35 @@ header {
 
 // After change this property, check the height of the banner
 // in home.component.scss
+.back-button,
 .geotrix-logo,
 .geotrix-logo img,
 .menu {
   height: 50px;
 }
+
+@media screen and (display-mode: standalone) {
+  .back-button {
+    width: 5rem;
+    display: block;
+    padding: 12.5px 0;
+
+    svg {
+      fill: #fff;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+// .back-button:-moz-full-screen {
+//   width: 5rem;
+//   display: block;
+//   padding: 12.5px 0;
+
+//   svg {
+//     fill: #fff;
+//     width: 25px;
+//     height: 25px;
+//   }
+// }

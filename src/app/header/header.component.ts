@@ -12,4 +12,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  onBack() {
+    document.exitFullscreen();
+
+    if (window.history.length === 2) {
+
+    } else {
+      window.history.back();
+    }
+  }
 }
