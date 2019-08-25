@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1566703807771,
+  "timestamp": 1566763613983,
   "index": "https://geotrix-project.github.io/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "https://geotrix-project.github.io/favicon.ico",
         "https://geotrix-project.github.io/index.html",
-        "https://geotrix-project.github.io/main-es2015.64c3a72815686eac4cc1.js",
-        "https://geotrix-project.github.io/main-es5.eae18f26b1e459e688cd.js",
+        "https://geotrix-project.github.io/main-es2015.62ef11b3e9fb9af81d19.js",
+        "https://geotrix-project.github.io/main-es5.fd6dac6a7ef5d24df964.js",
         "https://geotrix-project.github.io/polyfills-es2015.d77e0b49b00575a23eb0.js",
         "https://geotrix-project.github.io/polyfills-es5.38c6da221291b284e1c4.js",
         "https://geotrix-project.github.io/runtime-es2015.5bc68c0dd8cf137fbe82.js",
@@ -102,9 +102,9 @@
     "https://geotrix-project.github.io/assets/logo/geotrix_200x200.png": "7bad3fdb0811e5df8da807932b1316db1b87e83a",
     "https://geotrix-project.github.io/assets/logo/ra-logo-white.png": "d4ca772d62e02f67e0dcc994f0306fd10ac25aab",
     "https://geotrix-project.github.io/favicon.ico": "643e6e1d291f53481404a0283fc66892ea571253",
-    "https://geotrix-project.github.io/index.html": "1dc26090d1f74f31c3b09d4f979fbd0bb89d7900",
-    "https://geotrix-project.github.io/main-es2015.64c3a72815686eac4cc1.js": "08c5486795191444eecc8d1b8c902454041d2c3b",
-    "https://geotrix-project.github.io/main-es5.eae18f26b1e459e688cd.js": "044062ebc6d694b559f5eaabd02f4809d64cc27e",
+    "https://geotrix-project.github.io/index.html": "7c34e06cd2f161fe759c0c0dee07ab6bc6c5b7b0",
+    "https://geotrix-project.github.io/main-es2015.62ef11b3e9fb9af81d19.js": "fb19391adc3dcd4c36f627d4412fe54a504fa705",
+    "https://geotrix-project.github.io/main-es5.fd6dac6a7ef5d24df964.js": "013e4823ffd0ae16fdb5f14ee45135fad27d812f",
     "https://geotrix-project.github.io/polyfills-es2015.d77e0b49b00575a23eb0.js": "058203dab4ba87056d6976029ba60fa42e6f75b9",
     "https://geotrix-project.github.io/polyfills-es5.38c6da221291b284e1c4.js": "7e1b38fcb73a9607657630e25f278302170f96dc",
     "https://geotrix-project.github.io/runtime-es2015.5bc68c0dd8cf137fbe82.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
