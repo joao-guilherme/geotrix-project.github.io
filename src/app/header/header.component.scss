@@ -15,7 +15,7 @@ header {
 
 .back-button {
   width: 5rem;
-  display: block !important;
+  display: none;
   padding: 12.5px 0;
 
   svg {
@@ -61,4 +61,10 @@ header {
 .geotrix-logo img,
 .menu {
   height: 50px;
+}
+
+@media screen and (display-mode: standalone) {
+  .back-button {
+    display: block;
+  }
 }

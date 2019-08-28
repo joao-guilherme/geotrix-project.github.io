@@ -12,14 +12,9 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    this.standalone = window.matchMedia('(display-mode: standalone)').matches;
-
-    // this.standalone = this.win.navigator.standalone ||
-    //   this.win.matchMedia('(display-mode: standalone)').matches;
-  }
+  ngOnInit() { }
 
   onBack() {
-    window.history.back();
+    window.history.go(-1);
   }
 }
