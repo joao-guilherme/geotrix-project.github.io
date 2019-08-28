@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'geotrix-header',
@@ -7,26 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  private win: any = window;
-  private doc: any = document;
-
   public standalone: boolean;
 
   constructor() { }
 
   ngOnInit() {
-    this.standalone = this.win.navigator.standalone ||
-      this.win.matchMedia('(display-mode: standalone)').matches;
+    this.standalone = window.matchMedia('(display-mode: standalone)').matches;
+
+    // this.standalone = this.win.navigator.standalone ||
+    //   this.win.matchMedia('(display-mode: standalone)').matches;
   }
 
   onBack() {
-    // this.win.history.back();
-    const method = this.doc.exitFullscreen ||
-      this.doc.mozCancelFullScreen ||
-      this.doc.msExitFullscreen;
-
-    if (method) {
-      method.call(this.doc);
-    }
+    window.history.back();
   }
 }

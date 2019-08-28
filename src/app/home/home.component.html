@@ -1,23 +1,19 @@
 <section class="banner">
   <div class="banner-content">
     <h1>Geotrix</h1>
-    <h2>A simplified approach to Analytical Geometry with Step-by-Step solution</h2>
-    <a class="banner-example banner-button">Examples</a>
-    <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()">Install our App</a>
+    <h2 [translate]="'home.banner.subtitle'"></h2>
+    <a class="banner-example banner-button" [translate]="'home.banner.examples'"></a>
+    <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()" [translate]="'home.banner.install'"></a>
   </div>
 </section>
 
 <section class="description">
-  <p>
-    Embla's purpose is to provide a low level carousel and allow developers to extend it by using its available
-    methods. Extend it with some very basic JavaScript and build awesome physics simulated carousels. It's dependency
-    free and 100% open source.
-  </p>
+  <p [translate]="'home.description'"></p>
 </section>
 
 <section class="themes">
-  <h3 class="themes-title">Temas já disponíveis!</h3>
-  <h5 class="themes-subtitle">Escolha e clique</h5>
+  <h3 class="themes-title" [translate]="'home.themes.title'"></h3>
+  <h5 class="themes-subtitle" [translate]="'home.themes.subtitle'"></h5>
   <div class="embla">
     <div class="embla__viewport">
       <div class="embla__container">
@@ -25,18 +21,18 @@
         <div class="embla__slide">
           <div class="theme-content">
             <div class="theme-icon">
-              <img src="/assets/icons/themes/infinity.png" alt="" srcset="">
+              <img src="/assets/icons/themes/infinity.png" alt="Determinant">
             </div>
-            <div class="theme-description">Determinante</div>
+            <div class="theme-description" [translate]="'home.themes.determinant'"></div>
           </div>
         </div>
 
         <div class="embla__slide">
           <div class="theme-content">
             <div class="theme-icon">
-              <img src="/assets/icons/themes/percentage.png" alt="" srcset="">
+              <img src="/assets/icons/themes/percentage.png" alt="Inverse">
             </div>
-            <div class="theme-description">Inversa</div>
+            <div class="theme-description" [translate]="'home.themes.inverse'"></div>
           </div>
         </div>
 
@@ -44,9 +40,9 @@
           <div class="theme-content">
             <a href="/vectorial_product">
               <div class="theme-icon">
-                <img src="/assets/icons/themes/square-root.png" alt="" srcset="">
+                <img src="/assets/icons/themes/square-root.png" alt="Dot Product">
               </div>
-              <div class="theme-description">Produto Vetorial</div>
+              <div class="theme-description" [translate]="'home.themes.dotProduct'"></div>
             </a>
           </div>
         </div>
@@ -54,18 +50,18 @@
         <div class="embla__slide">
           <div class="theme-content">
             <div class="theme-icon">
-              <img src="/assets/icons/themes/pi.png" alt="" srcset="">
+              <img src="/assets/icons/themes/pi.png" alt="Vectors">
             </div>
-            <div class="theme-description">Vetores</div>
+            <div class="theme-description" [translate]="'home.themes.vectors'"></div>
           </div>
         </div>
 
         <div class="embla__slide">
           <div class="theme-content">
             <div class="theme-icon">
-              <img src="/assets/icons/themes/the-sum-of.png" alt="" srcset="">
+              <img src="/assets/icons/themes/the-sum-of.png" alt="Conical and Quadric">
             </div>
-            <div class="theme-description">Cônicas e Quádricas</div>
+            <div class="theme-description" [translate]="'home.themes.conicalAndQuadric'"></div>
           </div>
         </div>
 

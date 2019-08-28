@@ -1,0 +1,30 @@
+{
+  "english": "English",
+  "portuguese": "Portuguese",
+
+  "home": {
+    "banner": {
+      "subtitle": "A simplified approach to Analytical Geometry with Step-by-Step solution",
+      "examples": "Examples",
+      "install": "Install our WebApp"
+    },
+
+    "description": "Embla's purpose is to provide a low level carousel and allow developers to extend it by using its available methods. Extend it with some very basic JavaScript and build awesome physics simulated carousels. It's dependency free and 100% open source.",
+
+    "themes": {
+      "title": "Themes already available!",
+      "subtitle": "Chose and click",
+
+      "determinant": "Determinant",
+      "inverse": "Inverse",
+      "dotProduct": "Dot Product",
+      "vectors": "Vectors",
+      "conicalAndQuadric": "Conical and Quadric"
+    }
+  },
+
+  "footer": {
+    "about": "About Us",
+    "feedback": "Feedback"
+  }
+}
