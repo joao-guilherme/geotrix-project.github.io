@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'geotrix-header',
@@ -8,11 +8,13 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  public standalone: boolean;
+  public disabled: boolean;
 
-  constructor() { }
+  constructor(private location: Location) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.location.onUrlChange(url => { this.disabled = url === '/'; });
+  }
 
   onBack() {
     window.history.go(-1);

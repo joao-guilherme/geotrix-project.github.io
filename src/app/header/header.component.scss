@@ -13,7 +13,12 @@ header {
   justify-content: space-between;
 }
 
+.disabled {
+  opacity: 0 !important;
+}
+
 .back-button {
+  opacity: 1;
   width: 5rem;
   display: none;
   padding: 12.5px 0;

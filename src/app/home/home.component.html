@@ -3,7 +3,8 @@
     <h1>Geotrix</h1>
     <h2 [translate]="'home.banner.subtitle'"></h2>
     <a class="banner-example banner-button" [translate]="'home.banner.examples'"></a>
-    <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()" [translate]="'home.banner.install'"></a>
+    <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()"
+      [translate]="'home.banner.install'"></a>
   </div>
 </section>
 
@@ -19,50 +20,48 @@
       <div class="embla__container">
 
         <div class="embla__slide">
-          <div class="theme-content">
+          <a routerLink="/matrix/determinant" class="theme-content">
             <div class="theme-icon">
               <img src="/assets/icons/themes/infinity.png" alt="Determinant">
             </div>
             <div class="theme-description" [translate]="'home.themes.determinant'"></div>
-          </div>
+          </a>
         </div>
 
         <div class="embla__slide">
-          <div class="theme-content">
+          <a routerLink="matrix/inverse" class="theme-content">
             <div class="theme-icon">
               <img src="/assets/icons/themes/percentage.png" alt="Inverse">
             </div>
             <div class="theme-description" [translate]="'home.themes.inverse'"></div>
-          </div>
+          </a>
         </div>
 
         <div class="embla__slide">
-          <div class="theme-content">
-            <a href="/vectorial_product">
-              <div class="theme-icon">
-                <img src="/assets/icons/themes/square-root.png" alt="Dot Product">
-              </div>
-              <div class="theme-description" [translate]="'home.themes.dotProduct'"></div>
-            </a>
-          </div>
+          <a routerLink="/vector/dot-product" class="theme-content">
+            <div class="theme-icon">
+              <img src="/assets/icons/themes/square-root.png" alt="Dot Product">
+            </div>
+            <div class="theme-description" [translate]="'home.themes.dotProduct'"></div>
+          </a>
         </div>
 
         <div class="embla__slide">
-          <div class="theme-content">
+          <a routerLink="/vector/cross-product" class="theme-content">
             <div class="theme-icon">
               <img src="/assets/icons/themes/pi.png" alt="Vectors">
             </div>
             <div class="theme-description" [translate]="'home.themes.vectors'"></div>
-          </div>
+          </a>
         </div>
 
         <div class="embla__slide">
-          <div class="theme-content">
+          <a routerLink="/geometry/conical-and-quadric" class="theme-content">
             <div class="theme-icon">
               <img src="/assets/icons/themes/the-sum-of.png" alt="Conical and Quadric">
             </div>
             <div class="theme-description" [translate]="'home.themes.conicalAndQuadric'"></div>
-          </div>
+          </a>
         </div>
 
       </div>
