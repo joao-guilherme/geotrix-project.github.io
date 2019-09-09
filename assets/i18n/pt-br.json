@@ -9,6 +9,10 @@
       "install": "Instale o nosso WebApp"
     },
 
+    "install": {
+      "success": "App instalado com sucesso"
+    },
+
     "description": "Embla's purpose is to provide a low level carousel and allow developers to extend it by using its available methods. Extend it with some very basic JavaScript and build awesome physics simulated carousels. It's dependency free and 100% open source.",
 
     "themes": {
