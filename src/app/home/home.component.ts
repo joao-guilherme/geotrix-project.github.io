@@ -1,7 +1,10 @@
-import { Router } from '@angular/router';
 import { Component, OnInit, HostListener } from '@angular/core';
 
 import EmblaCarousel from 'embla-carousel';
+
+// Services
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'geotrix-home',
@@ -15,22 +18,29 @@ export class HomeComponent implements OnInit {
 
   @HostListener('window:beforeinstallprompt', ['$event'])
   onbeforeinstallprompt(evt: any) {
-    console.log(evt);
     evt.preventDefault();
 
     this.showButton = true;
     this.deferredPrompt = evt;
   }
 
-  // window.addEventListener('appinstalled', (evt) => {
-  //   console.log('Instalação realizada com sucesso.');
-  // });
+  @HostListener('window:appinstalled', ['$event'])
+  onappinstalled(evt: any) {
+    this.showButton = false;
+    this.deferredPrompt = null;
 
-  constructor(public router: Router) { }
+    this.snackBar.open(
+      this.translate.instant('home.install.success'), null, {
+        duration: 3000,
+        verticalPosition: 'bottom',
+        horizontalPosition: 'center'
+      }
+    );
+  }
+
+  constructor(private translate: TranslateService, private snackBar: MatSnackBar) { }
 
   ngOnInit() {
-    // *ngIf="!router.url.includes('home')"
-
     const carousel: Element = document.querySelector('.embla');
 
     const nextBtn: Element = carousel.querySelector('.embla__button--next');
@@ -51,15 +61,5 @@ export class HomeComponent implements OnInit {
 
   addToHomeScreen() {
     this.deferredPrompt.prompt();
-
-    this.deferredPrompt.userChoice.then((choiceResult: any) => {
-      if (choiceResult.outcome === 'accepted') {
-        this.showButton = false;
-        this.deferredPrompt = null;
-        console.log('User accepted the A2HS prompt');
-      } else {
-        console.log('User dismissed the A2HS prompt');
-      }
-    });
   }
 }
