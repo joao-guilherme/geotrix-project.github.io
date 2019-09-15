@@ -33,7 +33,8 @@
               "src/googleb75c56f5d15f1232.html"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/css/geotrix-theme.scss"
             ],
             "scripts": []
           },

@@ -1,10 +1,8 @@
-@import "../../assets/css/variables";
-
 // Start Banner
 
 .banner {
   padding: 90px 15px 20px;
-  background-color: $black-color;
+  background-color: #282c34;
 
   div {
     margin: auto;
@@ -14,7 +12,6 @@
   h1 {
     font-size: 3rem;
     font-weight: bold;
-    color: $light-aqua-color;
   }
 
   h2 {
@@ -28,11 +25,6 @@
 .banner-example {
   margin: 15px 0;
   font-weight: 400;
-  background-color: $light-aqua-color;
-}
-
-.banner-install {
-  color: $light-aqua-color;
 }
 
 .banner-button {
@@ -53,7 +45,6 @@
 
   p {
     padding-bottom: 4rem;
-    border-bottom: 1px solid $gray;
   }
 }
 
@@ -107,7 +98,6 @@
   font-size: 1.3rem;
   font-weight: normal;
   padding-bottom: 1rem;
-  color: $light-black-color;
 }
 
 .theme-content {
@@ -154,7 +144,6 @@
 .embla__button__svg {
   width: 3.5rem;
   height: 3.5rem;
-  fill: $light-aqua-color;
 }
 
 .embla__button--prev {
@@ -245,5 +234,26 @@
     p {
       padding-bottom: 6rem;
     }
+  }
+}
+
+@mixin geotrix-home-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  .banner h1,
+  .banner-install {
+    color: mat-color($primary, lighter);
+  }
+
+  .banner-example {
+    background-color: mat-color($primary, lighter);
+  }
+
+  .embla__button__svg {
+    fill: mat-color($primary, lighter);
+  }
+
+  .description p {
+    border-bottom: 1px solid mat-color($mat-gray, 400);
   }
 }

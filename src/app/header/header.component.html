@@ -1,19 +1,36 @@
 <header>
-  <a class="back-button" [class.disabled]="disabled" (click)="onBack()">
-    <svg viewBox="137.718 -1.001 366.563 643.999">
-      <path
-        d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z">
-      </path>
-    </svg>
-  </a>
+  <div class="header-content">
+    <a class="back-button" [class.disabled]="disabled" (click)="onBack()">
+      <svg viewBox="137.718 -1.001 366.563 643.999">
+        <path
+          d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z">
+        </path>
+      </svg>
+    </a>
 
-  <a routerLink="" class="geotrix-logo" title="Geotrix">
-    <img src="/assets/logo/ra-logo-white.png" alt="Geotrix">
-  </a>
+    <a routerLink="" class="geotrix-logo" title="Geotrix">
+      <img src="/assets/logo/ra-logo-white.png" alt="Geotrix">
+    </a>
 
-  <span class="menu">
+    <span class="menu-dropdown">
+      {{ 'themes.title' | translate }}
+
+      <svg viewBox="0 0 7.453 4.647">
+        <path d="M18.9,6.556l2.851-2.851L18.9.9" transform="translate(7.454 -18.002) rotate(90)">
+        </path>
+      </svg>
+
+      <nav class="menu-dropdown-content">
+        <a routerLink="/matrix/determinant" [translate]="'themes.determinant'"></a>
+        <a routerLink="/matrix/inverse" [translate]="'themes.inverse'"></a>
+        <a routerLink="/vector/dot-product" [translate]="'themes.dotProduct'"></a>
+      </nav>
+    </span>
+
+    <span class="menu-hamburguer">
       <div></div>
       <div></div>
       <div></div>
-  </span>
+    </span>
+  </div>
 </header>

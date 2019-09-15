@@ -2,6 +2,16 @@
   "english": "English",
   "portuguese": "Portuguese",
 
+  "themes": {
+    "title": "Themes",
+
+    "determinant": "Determinant",
+    "inverse": "Inverse",
+    "dotProduct": "Dot Product",
+    "vectors": "Vectors",
+    "conicalAndQuadric": "Conical and Quadric"
+  },
+
   "home": {
     "banner": {
       "subtitle": "A simplified approach to Analytical Geometry with Step-by-Step solution",
@@ -17,13 +27,7 @@
 
     "themes": {
       "title": "Themes already available!",
-      "subtitle": "Chose and click",
-
-      "determinant": "Determinant",
-      "inverse": "Inverse",
-      "dotProduct": "Dot Product",
-      "vectors": "Vectors",
-      "conicalAndQuadric": "Conical and Quadric"
+      "subtitle": "Chose and click"
     }
   },
 

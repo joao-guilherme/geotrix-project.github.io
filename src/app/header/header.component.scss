@@ -1,12 +1,17 @@
-@import "../../assets/css/variables";
+@import "~@angular/material/theming";
 
 header {
   width: 100%;
   padding: 0 15px;
   position: fixed;
-  background-color: $aqua-color;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+.header-content {
+  width: 100%;
+  margin: auto;
+  max-width: 1100px;
 
   display: flex;
   flex-flow: row wrap;
@@ -14,6 +19,7 @@ header {
 }
 
 .disabled {
+  pointer-events: none;
   opacity: 0 !important;
 }
 
@@ -34,7 +40,53 @@ header {
   padding: 5px 20px;
 }
 
-.menu {
+.menu-dropdown {
+  display: none;
+  width: 150px;
+  color: #fff;
+  margin: 12px 0;
+  font-weight: 470;
+  font-size: 1.6rem;
+  text-align: center;
+  position: relative;
+
+  svg {
+    width: 10px;
+    height: 9px;
+    fill: #fff;
+    vertical-align: middle;
+  }
+}
+
+.menu-dropdown-content {
+  z-index: 1;
+  display: none;
+  min-width: 150px;
+  position: absolute;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  a {
+    display: block;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 12px 16px;
+  }
+
+  a:first-child:hover {
+    border-radius: 6px 6px 0 0;
+  }
+
+  a:last-child:hover {
+    border-radius: 0 0 6px 6px;
+  }
+}
+
+.menu-dropdown:hover .menu-dropdown-content {
+  display: block;
+}
+
+.menu-hamburguer {
   width: 60px;
   padding: 15px 15px 10px;
 
@@ -59,8 +111,6 @@ header {
   }
 }
 
-// After change this property, check the height of the banner
-// in home.component.scss
 .back-button,
 .geotrix-logo,
 .geotrix-logo img,
@@ -71,5 +121,31 @@ header {
 @media screen and (display-mode: standalone) {
   .back-button {
     display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .menu-dropdown {
+    display: block;
+  }
+}
+
+@mixin geotrix-header-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  header {
+    background-color: mat-color($primary);
+  }
+
+  .menu-dropdown-content {
+    background-color: mat-color($primary, darker);
+
+    a:hover {
+      background-color: mat-color($primary, lighter);
+    }
   }
 }
