@@ -1,20 +1,20 @@
 <section class="banner">
   <div class="banner-content">
     <h1>Geotrix</h1>
-    <h2 [translate]="'home.banner.subtitle'"></h2>
-    <a class="banner-example banner-button" [translate]="'home.banner.examples'"></a>
+    <h2 translate="home.banner.subtitle"></h2>
+    <a class="banner-example banner-button" translate="home.banner.examples"></a>
     <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()"
-      [translate]="'home.banner.install'"></a>
+      translate="home.banner.install"></a>
   </div>
 </section>
 
 <section class="description">
-  <p [translate]="'home.description'"></p>
+  <p translate="home.description"></p>
 </section>
 
 <section class="themes">
-  <h3 class="themes-title" [translate]="'home.themes.title'"></h3>
-  <h5 class="themes-subtitle" [translate]="'home.themes.subtitle'"></h5>
+  <h3 class="themes-title" translate="home.themes.title"></h3>
+  <h5 class="themes-subtitle" translate="home.themes.subtitle"></h5>
   <div class="embla">
     <div class="embla__viewport">
       <div class="embla__container">
@@ -24,7 +24,7 @@
             <div class="theme-icon">
               <img src="/assets/icons/themes/infinity.png" alt="Determinant">
             </div>
-            <div class="theme-description" [translate]="'themes.determinant'"></div>
+            <div class="theme-description" translate="themes.determinant"></div>
           </a>
         </div>
 
@@ -33,7 +33,7 @@
             <div class="theme-icon">
               <img src="/assets/icons/themes/percentage.png" alt="Inverse">
             </div>
-            <div class="theme-description" [translate]="'themes.inverse'"></div>
+            <div class="theme-description" translate="themes.inverse"></div>
           </a>
         </div>
 
@@ -42,16 +42,16 @@
             <div class="theme-icon">
               <img src="/assets/icons/themes/square-root.png" alt="Dot Product">
             </div>
-            <div class="theme-description" [translate]="'themes.dotProduct'"></div>
+            <div class="theme-description" translate="themes.dotProduct"></div>
           </a>
         </div>
 
         <div class="embla__slide">
           <a routerLink="/vector/cross-product" class="theme-content">
             <div class="theme-icon">
-              <img src="/assets/icons/themes/pi.png" alt="Vectors">
+              <img src="/assets/icons/themes/pi.png" alt="Cross Product">
             </div>
-            <div class="theme-description" [translate]="'themes.vectors'"></div>
+            <div class="theme-description" translate="themes.crossProduct"></div>
           </a>
         </div>
 
@@ -60,7 +60,7 @@
             <div class="theme-icon">
               <img src="/assets/icons/themes/the-sum-of.png" alt="Conical and Quadric">
             </div>
-            <div class="theme-description" [translate]="'themes.conicalAndQuadric'"></div>
+            <div class="theme-description" translate="themes.conicalAndQuadric"></div>
           </a>
         </div>
 

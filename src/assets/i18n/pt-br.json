@@ -1,14 +1,14 @@
 {
-  "english": "Inglês",
-  "portuguese": "Português",
+  "en": "Inglês",
+  "pt-br": "Português",
 
   "themes": {
     "title": "Temas",
 
     "determinant": "Determinante",
     "inverse": "Inversa",
-    "dotProduct": "Produto Vetorial",
-    "vectors": "Vetores",
+    "dotProduct": "Produto Escalar",
+    "crossProduct":"Produto Vetorial",
     "conicalAndQuadric": "Cônica e Quádrica"
   },
 
@@ -29,6 +29,29 @@
       "title": "Temas já disponíveis!",
       "subtitle": "Escolha e clique"
     }
+  },
+
+  "dock": {
+    "matrix": {
+      "title": "Matriz",
+      "determinant": "Determinante",
+      "inverse": "Inversa"
+    },
+
+    "vector": {
+      "title": "Vetor",
+      "dotProduct": "Produto Escalar",
+      "crossProduct": "Produto Vetorial"
+    },
+
+    "settings": {
+      "title": "Configurações"
+    }
+  },
+
+  "determinant": {
+    "title": "Determinante",
+    "calculate": "Calcular"
   },
 
   "footer": {

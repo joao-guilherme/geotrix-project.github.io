@@ -1,0 +1,43 @@
+<div class="matrix-content">
+  <div class="matrix-top">
+    <button class="btn-cached" (click)="transpose()" color="primary" mat-raised-button>
+      <i class="material-icons">cached</i>
+    </button>
+
+    <button class="btn-add" (click)="incrementCols()" color="primary" mat-raised-button>
+      <i class="material-icons">add</i>
+    </button>
+    <button (click)="removeCols()" color="primary" mat-raised-button>
+      <i class="material-icons">remove</i>
+    </button>
+<!-- 
+    <span class="matrix-dimensions">
+      <span>{{ matrix.length }}</span>
+      <span>x</span>
+      <span>{{ matrix[0].length }}</span>
+    </span> -->
+  </div>
+
+  <div class="matrix-left">
+    <div>
+      <button class="btn-add" (click)="incrementRows()" color="primary" mat-raised-button>
+        <i class="material-icons">add</i>
+      </button>
+    </div>
+    <div>
+      <button (click)="removeRows()" color="primary" mat-raised-button>
+        <i class="material-icons">remove</i>
+      </button>
+    </div>
+  </div>
+
+  <div class="matrix-right">
+    <div *ngFor="let row of matrix; let i = index">
+      <mat-form-field *ngFor="let col of row; let j = index" floatLabel="never">
+        <input matInput placeholder="0" value="{{ col }}">
+        <mat-hint>{{ i+1 }} x {{ j+1 }}</mat-hint>
+        <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+      </mat-form-field>
+    </div>
+  </div>
+</div>

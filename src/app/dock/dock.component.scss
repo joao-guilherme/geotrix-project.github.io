@@ -1,0 +1,34 @@
+@import "~@angular/material/theming";
+
+.dock-header {
+  display: block;
+  margin: 18px 0;
+  font-size: 3.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.themes-list {
+  margin-left: 20px;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
+.dock-footer {
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-align: center;
+  position: absolute;
+}
+
+@mixin geotrix-dock-theme($theme) {
+  $primary: map-get($theme, primary);
+
+  .dock-header {
+    color: mat-color($primary, darker);
+  }
+}

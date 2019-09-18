@@ -1,4 +1,4 @@
-<header>
+<header class="header">
   <div class="header-content">
     <a class="back-button" [class.disabled]="disabled" (click)="onBack()">
       <svg viewBox="137.718 -1.001 366.563 643.999">
@@ -12,22 +12,38 @@
       <img src="/assets/logo/ra-logo-white.png" alt="Geotrix">
     </a>
 
-    <span class="menu-dropdown">
-      {{ 'themes.title' | translate }}
+    <span class="menu-list">
+      <span class="menu-dropdown">
+        {{ 'themes.title' | translate }}
 
-      <svg viewBox="0 0 7.453 4.647">
-        <path d="M18.9,6.556l2.851-2.851L18.9.9" transform="translate(7.454 -18.002) rotate(90)">
-        </path>
-      </svg>
+        <svg viewBox="0 0 7.453 4.647">
+          <path d="M18.9,6.556l2.851-2.851L18.9.9" transform="translate(7.454 -18.002) rotate(90)">
+          </path>
+        </svg>
 
-      <nav class="menu-dropdown-content">
-        <a routerLink="/matrix/determinant" [translate]="'themes.determinant'"></a>
-        <a routerLink="/matrix/inverse" [translate]="'themes.inverse'"></a>
-        <a routerLink="/vector/dot-product" [translate]="'themes.dotProduct'"></a>
-      </nav>
+        <nav class="menu-dropdown-content">
+          <a routerLink="/matrix/determinant" translate="themes.determinant"></a>
+          <a routerLink="/matrix/inverse" translate="themes.inverse"></a>
+          <a routerLink="/vector/dot-product" translate="themes.dotProduct"></a>
+        </nav>
+      </span>
+
+      <span class="menu-dropdown">
+        {{ lang | translate }}
+
+        <svg viewBox="0 0 7.453 4.647">
+          <path d="M18.9,6.556l2.851-2.851L18.9.9" transform="translate(7.454 -18.002) rotate(90)">
+          </path>
+        </svg>
+
+        <ul class="menu-dropdown-content">
+          <li translate="en" (click)="setLanguage('en')"></li>
+          <li translate="pt-br" (click)="setLanguage('pt-br')"></li>
+        </ul>
+      </span>
     </span>
 
-    <span class="menu-hamburguer">
+    <span class="menu-hamburguer" (click)="openSidenav()">
       <div></div>
       <div></div>
       <div></div>
