@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+@import '../../app/header/header.component.scss';
+@import '../../app/dock/dock.component.scss';
+@import '../../app/home/home.component.scss';
+@import '../../app/footer/footer.component.scss';
+
+@include mat-core();
+
+$geotrix-primary: mat-palette($mat-teal, 500, A700, 600);
+$geotrix-accent:  mat-palette($mat-indigo);
+$geotrix-warn:    mat-palette($mat-red);
+
+$geotrix-theme: mat-light-theme($geotrix-primary, $geotrix-accent, $geotrix-warn);
+
+@include angular-material-theme($geotrix-theme);
+
+// Custom Components
+@include geotrix-header-theme($geotrix-theme);
+@include geotrix-dock-theme($geotrix-theme);
+@include geotrix-home-theme($geotrix-theme);
+@include geotrix-footer-theme($geotrix-theme);
