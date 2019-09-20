@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 import EmblaCarousel from 'embla-carousel';
 
@@ -9,33 +10,39 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'geotrix-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('installable', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('1s', style({ opacity: 1 }))
+      ]),
+      transition(':leave', [
+        style({ opacity: 1 }),
+        animate('1s', style({ opacity: 0 }))
+      ]),
+    ])
+  ]
 })
 export class HomeComponent implements OnInit {
 
+  public installable: boolean;
   private deferredPrompt: any;
-  public showButton = false;
 
   @HostListener('window:beforeinstallprompt', ['$event'])
   onbeforeinstallprompt(evt: any) {
     evt.preventDefault();
 
-    this.showButton = true;
+    this.installable = true;
     this.deferredPrompt = evt;
   }
 
   @HostListener('window:appinstalled', ['$event'])
   onappinstalled(evt: any) {
-    this.showButton = false;
+    this.installable = false;
     this.deferredPrompt = null;
 
-    this.snackBar.open(
-      this.translate.instant('home.install.success'), null, {
-        duration: 3000,
-        verticalPosition: 'bottom',
-        horizontalPosition: 'center'
-      }
-    );
+    this.snackBar.open(this.translate.instant('home.install.success'));
   }
 
   constructor(private translate: TranslateService, private snackBar: MatSnackBar) { }

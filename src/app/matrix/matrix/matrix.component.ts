@@ -33,7 +33,7 @@ export class MatrixComponent implements OnInit {
     if (this.matrix.length < 6) {
       this.matrix.push(new Array(this.matrix[0].length));
     } else {
-      this.showMensage(this.translate.instant('matrix.message.row'));
+      this.snackBar.open(this.translate.instant('matrix.message.row'));
     }
   }
 
@@ -41,7 +41,7 @@ export class MatrixComponent implements OnInit {
     if (this.matrix.length > 1) {
       this.matrix.pop();
     } else {
-      this.showMensage(this.translate.instant('matrix.message.row'));
+      this.snackBar.open(this.translate.instant('matrix.message.row'));
     }
   }
 
@@ -49,7 +49,7 @@ export class MatrixComponent implements OnInit {
     if (this.matrix[0].length < 6) {
       this.matrix.forEach(element => { element.push(''); });
     } else {
-      this.showMensage(this.translate.instant('matrix.message.column'));
+      this.snackBar.open(this.translate.instant('matrix.message.column'));
     }
   }
 
@@ -57,16 +57,7 @@ export class MatrixComponent implements OnInit {
     if (this.matrix[0].length > 1) {
       this.matrix.forEach(element => { element.pop(); });
     } else {
-      this.showMensage(this.translate.instant('matrix.message.column'));
+      this.snackBar.open(this.translate.instant('matrix.message.column'));
     }
-  }
-
-  private showMensage(message: string): void {
-    const config = new MatSnackBarConfig();
-    config.duration = 3000;
-    config.verticalPosition = 'top';
-    config.horizontalPosition = 'center';
-
-    this.snackBar.open(message, undefined, config);
   }
 }

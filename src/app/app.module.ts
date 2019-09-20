@@ -33,6 +33,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 // Services
 import { SidenavService } from './services/SidenavService';
 import { MatrixComponent } from './matrix/matrix/matrix.component';
+import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material';
 
 // Gesture
 // export class HammerConfig extends HammerGestureConfig {
@@ -75,7 +76,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     })
   ],
   providers: [
-    SidenavService
+    SidenavService,
+    {
+      provide: MAT_SNACK_BAR_DEFAULT_OPTIONS,
+      useValue: {
+        duration: 3000,
+        verticalPosition: 'bottom',
+        horizontalPosition: 'center'
+      }
+    }
     // {
     //   provide: HAMMER_GESTURE_CONFIG,
     //   useClass: HammerConfig,

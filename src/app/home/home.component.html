@@ -3,8 +3,8 @@
     <h1>Geotrix</h1>
     <h2 translate="home.banner.subtitle"></h2>
     <a class="banner-example banner-button" translate="home.banner.examples"></a>
-    <a *ngIf="showButton" class="banner-install banner-button" (click)="addToHomeScreen()"
-      translate="home.banner.install"></a>
+    <a *ngIf="installable" class="banner-install banner-button" (click)="addToHomeScreen()"
+      translate="home.banner.install" [@installable]></a>
   </div>
 </section>
 
