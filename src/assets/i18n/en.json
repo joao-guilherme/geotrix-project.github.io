@@ -54,6 +54,13 @@
     "calculate": "Calculate"
   },
 
+  "matrix": {
+    "message": {
+      "column": "The number of columns must be between 1 and 5",
+      "row": "The number of rows must be between 1 and 5"
+    }
+  },
+
   "footer": {
     "about": "About Us",
     "feedback": "Feedback"
