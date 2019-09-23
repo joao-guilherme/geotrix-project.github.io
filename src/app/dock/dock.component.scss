@@ -1,18 +1,74 @@
 @import "~@angular/material/theming";
 
 .dock-header {
+  height: 100px;
+  color: white;
   display: block;
-  margin: 18px 0;
-  font-size: 3.2rem;
-  text-align: center;
   font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 90px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  a {
+    display: block;
+  }
+}
+
+.dock-nav {
+  top: -30px;
+  position: relative;
+}
+
+.mat-expansion-panel {
+  margin: 12px;
+  border-radius: 15px;
+}
+
+.expansion-header {
+  font-size: 1.6rem;
+
+  mat-panel-title {
+    margin: 0;
+  }
+
+  mat-panel-description {
+    margin: auto;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+.expansion-icon {
+  width: 40px;
+  height: 40px;
 }
 
 .themes-list {
-  margin-left: 20px;
+  margin: 16px 0 0 20px;
+  font-size: 1.5rem;
 
   li {
-    margin-bottom: 5px;
+    height: 20px;
+    margin: 15px 0;
+  }
+
+  a {
+    display: block;
+
+    &::after {
+      content: "";
+      height: 3px;
+      display: block;
+
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+
+    &.active::after {
+      transform: scaleX(1);
+    }
   }
 }
 
@@ -28,7 +84,7 @@
 @mixin geotrix-dock-theme($theme) {
   $primary: map-get($theme, primary);
 
-  .dock-header {
-    color: mat-color($primary, darker);
+  .dock-header, .active::after {
+    background-color: mat-color($primary, darker);
   }
 }

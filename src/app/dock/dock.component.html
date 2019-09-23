@@ -1,49 +1,75 @@
 <header class="dock-header">
-  Geotrix
+  <a routerLink="">Geotrix</a>
 </header>
 
-<nav>
-  <mat-accordion>
-    <mat-expansion-panel hideToggle>
+<nav class="dock-nav">
+  <mat-expansion-panel>
 
-      <mat-expansion-panel-header>
-        <mat-panel-title translate="dock.matrix.title"></mat-panel-title>
-      </mat-expansion-panel-header>
+    <mat-expansion-panel-header collapsedHeight="64px" class="expansion-header">
+      <mat-panel-title>
+        <img class="expansion-icon" src="/assets/icons/themes/infinity.png" alt="Determinant">
+      </mat-panel-title>
 
-      <ul class="themes-list">
-        <li>
-          <a class="dock-link" routerLink="matrix/determinant" (click)="closeSidenav()" routerLinkActive="active"
-            translate="dock.matrix.determinant"></a>
-        </li>
+      <mat-panel-description translate="dock.matrix.title"></mat-panel-description>
+    </mat-expansion-panel-header>
 
-        <li>
-          <a class="dock-link" routerLink="matrix/inverse" (click)="closeSidenav()" routerLinkActive="active"
-            translate="dock.matrix.inverse"></a>
-        </li>
-      </ul>
+    <ul class="themes-list">
+      <li>
+        <a class="dock-link" routerLink="matrix/determinant" routerLinkActive="active"
+          translate="dock.matrix.determinant"></a>
+      </li>
 
-    </mat-expansion-panel>
+      <li>
+        <a class="dock-link" routerLink="matrix/inverse" routerLinkActive="active" translate="dock.matrix.inverse"></a>
+      </li>
+    </ul>
 
-    <mat-expansion-panel hideToggle>
+  </mat-expansion-panel>
 
-      <mat-expansion-panel-header>
-        <mat-panel-title translate="dock.vector.title"></mat-panel-title>
-      </mat-expansion-panel-header>
+  <mat-expansion-panel>
 
-      <ul class="themes-list">
-        <li translate="dock.vector.dotProduct"></li>
-      </ul>
+    <mat-expansion-panel-header collapsedHeight="64px" class="expansion-header">
+      <mat-panel-title>
+        <img class="expansion-icon" src="/assets/icons/themes/percentage.png" alt="Inverse">
+      </mat-panel-title>
+      <mat-panel-description translate="dock.vector.title"></mat-panel-description>
+    </mat-expansion-panel-header>
 
-    </mat-expansion-panel>
+    <ul class="themes-list">
+      <li translate="dock.vector.dotProduct"></li>
+    </ul>
 
-    <mat-expansion-panel hideToggle>
+  </mat-expansion-panel>
 
-      <mat-expansion-panel-header>
-        <mat-panel-title translate="dock.settings.title"></mat-panel-title>
-      </mat-expansion-panel-header>
+  <mat-expansion-panel>
 
-    </mat-expansion-panel>
-  </mat-accordion>
+    <mat-expansion-panel-header collapsedHeight="64px" class="expansion-header">
+      <mat-panel-title>
+        <img class="expansion-icon" src="/assets/icons/themes/square-root.png" alt="Dot Product">
+      </mat-panel-title>
+      <mat-panel-description translate="Conical"></mat-panel-description>
+    </mat-expansion-panel-header>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+
+    <mat-expansion-panel-header collapsedHeight="64px" class="expansion-header">
+      <mat-panel-title>
+        <img class="expansion-icon" src="/assets/icons/themes/pi.png" alt="Cross Product">
+      </mat-panel-title>
+      <mat-panel-description translate="Quadric"></mat-panel-description>
+    </mat-expansion-panel-header>
+
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+
+    <mat-expansion-panel-header collapsedHeight="64px" class="expansion-header">
+      <mat-panel-title translate="dock.settings.title"></mat-panel-title>
+    </mat-expansion-panel-header>
+
+  </mat-expansion-panel>
 </nav>
 
 <footer class="dock-footer">
