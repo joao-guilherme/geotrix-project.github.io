@@ -54,6 +54,13 @@
     "calculate": "Calcular"
   },
 
+  "matrix": {
+    "message": {
+      "column": "A quantidade de colunas deve estar entre 1 e 5",
+      "row": "A quantidade de linhas deve estar entre 1 e 5"
+    }
+  },
+
   "footer": {
     "about": "Sobre nós",
     "feedback": "Feedback"
