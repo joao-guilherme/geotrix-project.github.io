@@ -1,6 +1,7 @@
 @import "~@angular/material/theming";
 
 .header {
+  z-index: 2;
   width: 100%;
   padding: 0 15px;
   position: fixed;

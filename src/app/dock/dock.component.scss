@@ -1,5 +1,12 @@
 @import "~@angular/material/theming";
 
+:host {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
 .dock-header {
   height: 100px;
   color: white;
@@ -72,12 +79,10 @@
 }
 
 .dock-footer {
-  bottom: 0;
   width: 100%;
   padding: 10px 0;
   font-size: 1.2rem;
   text-align: center;
-  position: absolute;
 }
 
 @mixin geotrix-dock-theme($theme) {
