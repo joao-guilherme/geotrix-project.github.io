@@ -5,5 +5,38 @@
 
   <button translate="determinant.calculate" mat-raised-button (click)="calculate()" class="btn-calculate"></button>
 
-  
+  <mat-tab-group *ngIf="showSolution" color="primary" mat-align-tabs="center">
+
+    <mat-tab label="Sarrus">
+      <mat-expansion-panel>
+
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <!-- <ng-katex [equation]="sarrusResolution[sarrusResolution.length - 1]"></ng-katex> -->
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <ng-template>
+          <ng-container *ngFor="let resolution of sarrusResolution; last as isLast">
+            <!-- <ng-katex [equation]="resolution"></ng-katex> -->
+            <mat-divider class="divider" *ngIf="!isLast"></mat-divider>
+          </ng-container>
+        </ng-template>
+
+      </mat-expansion-panel>
+    </mat-tab>
+
+    <mat-tab label="Laplace">
+      <ng-template matTabContent>
+        Content 2 - Loaded: {{getTimeLoaded(2) | date:'medium'}}
+      </ng-template>
+    </mat-tab>
+
+    <mat-tab label="Chió">
+      <ng-template matTabContent>
+        Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}}
+      </ng-template>
+    </mat-tab>
+
+  </mat-tab-group>
 </div>
