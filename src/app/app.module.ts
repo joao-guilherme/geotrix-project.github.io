@@ -6,6 +6,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './angular-material.module';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material';
 
+// Katex Expressions
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 // Routing
 import { AppRoutingModule } from './app-routing.module';
 
@@ -90,6 +93,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     //   useClass: HammerConfig,
     // },
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

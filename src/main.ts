@@ -5,9 +5,14 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
+// Katex Expressions
+import { defineCustomElements as defineKatex } from '@navsnpm/katex-expression/loader';
+
 if (environment.production) {
   enableProdMode();
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+defineKatex(window);
