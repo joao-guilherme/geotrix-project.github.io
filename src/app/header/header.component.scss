@@ -1,10 +1,12 @@
 @import "~@angular/material/theming";
 
 .header {
+  top: 0;
+  left: 0;
   z-index: 2;
   width: 100%;
   padding: 0 15px;
-  position: fixed;
+  position: absolute;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
